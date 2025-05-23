@@ -1,0 +1,4 @@
+k6 run k6_hola_mundo.js
+k6 run k6_hola_mundo.js --vus 30 --duration 90s
+k6 run k6_variables_entorno.js -e DOMAIN=test.k6.io
+

@@ -1,0 +1,23 @@
+En el Powershell de Windows
+1.-Set-ExecutionPolicy Bypass -Scope Process -Force
+2.-[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+3.-choco --version
+
+Ejecutar como administrador el powershell -> muy importante estar como administrador
+
+4.-choco install k6
+
+checar version k6
+
+k6 --version
+
+cambiar a la carpeta browser2
+
+xk6 build --with github.com/grafana/xk6-browser
+
+.\k6.exe version
+
+
+#####################
+Correr 
+k6 run Curso1.js
